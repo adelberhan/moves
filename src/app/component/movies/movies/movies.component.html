@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row py-5">
+    <div class="col-md-4 align-items-center d-flex">
+      <div>
+        <div class="bord w-25 mb-4"></div>
+        <h2>
+          Trending movie to Watch <br />
+          Right now
+        </h2>
+        <p class="secondFontColor my-2">Most watched movies by dayes</p>
+        <div class="bord w-75 mb-4"></div>
+      </div>
+    </div>
+
+    <div *ngFor="let movie of trendingMovies" class="col-md-2">
+      <div class="movies my-2 align-items-center position-relative">
+        <a [routerLink]="['/moviedetils', movie.id]">
+          <img
+            class="w-100"
+            [src]="imgPrefix + movie.poster_path"
+            alt="{movie.title}"
+          />
+          <h3 class="h6 my-2">{{ movie.title }}</h3>
+          <div class="vote">{{ movie.vote_average }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

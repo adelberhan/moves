@@ -1,0 +1,60 @@
+section {
+  background-image: url(../../../assets/img/1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  // animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(../../../assets/img/1.jpg);
+  }
+  10% {
+    background-image: url(../../../assets/img/2.jpg);
+  }
+  20% {
+    background-image: url(../../../assets/img/3.jpg);
+  }
+  30% {
+    background-image: url(../../../assets/img/4.jpg);
+  }
+  40% {
+    background-image: url(../../../assets/img/5.jpg);
+  }
+  50% {
+    background-image: url(../../../assets/img/6.jpg);
+  }
+  60% {
+    background-image: url(../../../assets/img/7.jpeg);
+  }
+  70% {
+    background-image: url(../../../assets/img/8.jpg);
+  }
+  80% {
+    background-image: url(../../../assets/img/9.jpg);
+  }
+  80% {
+    background-image: url(../../../assets/img/10.jpg);
+  }
+
+  100% {
+    background-image: url(../../../assets/img/2.jpg);
+  }
+}
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 900;
+}
+
+img {
+  cursor: pointer;
+}

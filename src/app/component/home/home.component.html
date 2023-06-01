@@ -1,0 +1,87 @@
+<trends-home-header [trendingMovies]="trendingMovies"> </trends-home-header>
+
+<div class="container">
+  <div class="row py-5">
+    <div class="col-md-4 align-items-center d-flex">
+      <div>
+        <div class="bord w-25 mb-4"></div>
+        <h2>
+          Trending movie to Watch <br />
+          Right now
+        </h2>
+        <p class="secondFontColor my-2">Most watched movies by dayes</p>
+        <div class="bord w-75 mb-4"></div>
+      </div>
+    </div>
+
+    <div *ngFor="let movie of trendingMovies" class="col-md-2">
+      <div class="movies my-2 align-items-center position-relative">
+        <a [routerLink]="['/moviedetils', movie.id]">
+          <img
+            class="w-100"
+            [src]="imgPrefix + movie.poster_path"
+            alt="{movie.title}"
+          />
+          <h3 class="h6 my-2">{{ movie.title }}</h3>
+          <div class="vote">{{ movie.vote_average }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row py-5">
+    <div class="col-md-4 align-items-center d-flex">
+      <div>
+        <div class="bord w-25 mb-4"></div>
+        <h2>
+          Trending tv to Watch <br />
+          Right now
+        </h2>
+        <p class="secondFontColor my-2">Most watched tvs by dayes</p>
+        <div class="bord w-75 mb-4"></div>
+      </div>
+    </div>
+
+    <div *ngFor="let tv of trendingTv" class="col-md-2">
+      <div class="movies my-2 align-items-center position-relative">
+        <a [routerLink]="['/tvDetail', tv.id]">
+          <img
+            class="w-100"
+            [src]="imgPrefix + tv.poster_path"
+            alt="{tv.title}"
+          />
+          <h3 class="my-2 h6">{{ tv.name }}</h3>
+
+          <div class="vote">{{ tv.vote_average }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row py-5">
+    <div class="col-md-4 align-items-center d-flex">
+      <div>
+        <div class="bord w-25 mb-4"></div>
+        <h2>
+          Trending Actors <br />
+          Right now
+        </h2>
+        <p class="secondFontColor my-2">Most watched persons by dayes</p>
+        <div class="bord w-75 mb-4"></div>
+      </div>
+    </div>
+
+    <div *ngFor="let person of trendingpoepole" class="col-md-2">
+      <a [routerLink]="['/person', person.id]">
+        <div class="persons my-2 align-items-center position-relative">
+          <img
+            class="w-100"
+            [src]="imgPrefix + person.profile_path"
+            alt="{person.title}"
+          />
+          <h3 class="h6 my-2">{{ person.name }}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

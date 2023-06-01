@@ -1,0 +1,29 @@
+
+    .poster {
+      img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      color: #ffffff;
+    }
+  
+  .trailer {
+    background-color: #e50914;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .trailer:hover {
+    background-color: #e50914;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}

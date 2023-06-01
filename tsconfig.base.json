@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "types": [],
+    "paths": {
+      "@trends/libs": ["libs/src/index.ts"],
+      "@trends/libs/ui": ["libs/libs/ui/src/index.ts"],
+      "@trends/services": ["services/src/index.ts"],
+      "@trends/styles": ["libs/styles/src/index.ts"],
+      "@trends/ui": ["libs/ui/src/index.ts"]
+    }
+  },
+  "files": ["src/main.ts"],
+  "include": ["src/**/*.d.ts"],
+  "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
+}

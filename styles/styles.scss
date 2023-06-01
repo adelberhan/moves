@@ -1,0 +1,96 @@
+// global style
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';
+@import '../node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+$bgColor: #131722;
+$lightBgColor: #e50914;
+$bgTransparent: rgba(36, 186, 239);
+$fontColor: #fff;
+$borderColor: #a8a8a83d;
+$borderHeight: 1px;
+$secondFontColor: #949cb0;
+// ngx-owl-carousel-o/lib/styles/scss/owl.carousel
+
+@import './movie-style/movie-details';
+@import './tv-style/tv-details';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bgColor;
+  color: $fontColor;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+a {
+  font-size: 18px;
+  color: $fontColor !important;
+  text-decoration: none;
+  
+}
+a :hover {
+  font-size: 18px;
+  color: $fontColor;
+  text-decoration: none;
+ 
+}
+.log_out {
+  cursor: pointer;
+}
+.bord {
+  height: 1px;
+  background-color: $borderColor;
+}
+.secondFontColor {
+  color: $secondFontColor;
+}
+
+.vote {
+  top: 0;
+  right: 10px;
+  padding: 5px;
+  background-color: $lightBgColor;
+  font-weight: 700;
+  position: absolute;
+}
+.logo {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 30px;
+}
+
+.navbar {
+  margin: 0 0 0 33px;
+}
+.navbar {
+  margin: 0 0 0 300px !important;
+}
+
+.socal-media:hover{
+  background-color: #c2bebe;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  //   box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0092b3;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0092b3;
+}
