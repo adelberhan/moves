@@ -8,6 +8,7 @@ section {
   animation-name: animate;
   animation-direction: alternate-reverse;
   animation-duration: 30s;
+  background: cover;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-play-state: running;
@@ -57,4 +58,5 @@ h1 {
 
 img {
   cursor: pointer;
+  
 }

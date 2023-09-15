@@ -14,7 +14,7 @@
 
     <div *ngFor="let tv of trendingTv" class="col-md-2">
       <a [routerLink]="['/tvDetail', tv.id]">
-        <div class="movie my-2 align-items-center position-relative">
+        <div class=" my-2 align-items-center position-relative">
           <img
             class="w-100"
             [src]="imgPrefix + tv.poster_path"
